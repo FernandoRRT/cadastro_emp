@@ -12,14 +12,16 @@ function authJs(params) {
     xhr.addEventListener('load', function() {
       var responseObject = JSON.parse(this.response);
       console.log(responseObject);
-      console.log(responseObject.token);
-      if (responseObject.token) {
-        localStorage.setItem('token', responseObject.token);
-        localStorage.setItem('token', responseObject);
+      if (!!responseObject.token) {
+        // localStorage.setItem('token', responseObject.token);
+        // localStorage.setItem('token', responseObject);
         // jwtResponse.innerHTML = responseObject.token;
       } else {
        $result = JSON.stringify(responseObject);
-       jwtResponse.innerHTML = `${responseObject.error}`;
+       if (!!responseObject.error) {
+         jwtResponse.innerHTML = `${responseObject.error}`;
+
+       }
       }
     });
      var sendObject = JSON.stringify({email: user, password: password});
@@ -34,7 +36,9 @@ function getSecret() {
     var tokenElement = document.getElementById('token');
     var resultElement = document.getElementById('result');
     xhr.open('GET', url, true);
-    xhr.setRequestHeader("Authorization", "JWT " + tokenElement.innerHTML);
+    xhr.setRequestHeader("Authorization", "bearer " + 
+    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY1MTg2ODQwMSwiZXhwIjoxNjUxODcyMDAxLCJuYmYiOjE2NTE4Njg0MDEsImp0aSI6IjRSZmlSb0hUTWVnRlZ6bU0iLCJzdWIiOjEsInBydiI6IjAwODU3ZDI3Y2ZhMjhmOTRiMGFmMTQ5MTI1YzhkMWJiNWJjMjczOTkiLCJpZCI6MSwiZW1haWwiOiJmZXJuYW5kb0BzaXNjYWRlbS5jb20ifQ.bEGBxlVsmuFWSMtA4rCdKgFpuE1LOInVz3tKDto37fI"
+    );
     xhr.addEventListener('load', function() {
       var responseObject = JSON.parse(this.response);
       console.log(responseObject);

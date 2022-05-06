@@ -16,15 +16,12 @@ use App\Http\Controllers\AuthController;
 |
 */
 
+Route::post('login', [AuthController::class, 'login']);
 
 Route::group([
-    'middleware' => 'api',
+    'middleware' => ['jwt.verify'],
     'namespace' => 'App\Http\Controllers',
-    // 'prefix' => 'v1'
-
 ], function ($router) {
-
-    Route::post('login', [AuthController::class, 'login']);
     Route::get('company', [CompanyController::class, 'index']);
     Route::post('company', [CompanyController::class, 'store']);
     Route::put('company/{id}', [CompanyController::class, 'update']);
