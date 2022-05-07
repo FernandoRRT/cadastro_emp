@@ -1,0 +1,51 @@
+.grid-footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background: var(--primary);
+}
+
+.grid-footer__container a {
+  color: var(--primary-text);
+}
+
+.grid-footer__container__icon-div {
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 5px;
+  padding: 5px;
+  background: var(--secondary);
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.grid-footer__container__icon-div:hover {
+  color: var(--primary);
+}
+
+.icon-div__facebook:hover {
+  background: #3b5998;
+}
+
+.icon-div__twitter:hover {
+  background: #1DA1F2;
+}
+
+.icon-div__linkedin:hover {
+  background: #0077b5;
+}
+
+.icon-div__whatsapp:hover {
+  background: #25D366;
+}
+
+.icon-div__envelope:hover {
+  background: #e62727;
+}

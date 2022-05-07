@@ -1,0 +1,83 @@
+.grid-aside__logodiv {
+    margin: 0 auto;
+    /* padding-top: 10px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grid-aside__descriptor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.grid-aside__descriptor--text1 {
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.1em;
+    margin-top: 15px;
+    margin-bottom: -10px;
+    color: var(--secondary-text);
+}
+
+.grid-aside__descriptor--text2 {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Bakbak One", cursive;
+    color: var(--secondary-text);
+}
+
+.grid-aside__sidenav {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.sidenav-child {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.grid-aside__menu-item>a {
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--secondary-text);
+}
+
+.grid-aside__menu-link {
+    padding: 5px 0 5px 5px;
+    margin: 0;
+    border-top-right-radius: 25px 50%;
+    border-bottom-right-radius: 25px 50%;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.grid-aside__menu-link:hover {
+    border-top-right-radius: 25px 50%;
+    border-bottom-right-radius: 25px 50%;
+    cursor: pointer;
+    background: var(--secondary);
+    border-left: 5px solid var(--tertiary);
+    transition: all 0.01s ease-in-out;
+    color: var(--primary-text);
+}
+
+.grid-aside__menu-link i {
+    margin: 0 5px;
+}
+
+.grid-aside__menu-link i:hover {
+    color: var(--primary-text);
+}
+
+.grid-aside__menu-link>span {
+    font-weight: 600;
+}

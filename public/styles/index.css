@@ -46,15 +46,14 @@ text-align: center;
     display: flex;
     justify-content: space-between;
     width: 100%;
-
 }
 
 #login-div_error {
     text-align: center;
-    
     color: red;
     size: 14px;
     margin-top: 10px;
+    text-shadow: 1px 1px 2px black;
 }
 
 .login-div_controls {

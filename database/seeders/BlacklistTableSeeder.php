@@ -15,13 +15,13 @@ class BlacklistTableSeeder extends Seeder
     public function run()
     {
         DB::table('blacklist')->insert([
-            'email' => 'lucas.ferreira@suportegerencial.com.br'
+            'email' => 'email1@suportegerencial.com.br'
         ]);
         DB::table('blacklist')->insert([
-            'email' => 'douglas.santos@suportegerencial.com.br'
+            'email' => 'email2@suportegerencial.com.br'
         ]);
         DB::table('blacklist')->insert([
-            'email' => 'jonathas.almeida@suportegerencial.com.br'
+            'email' => 'email3@suportegerencial.com.br'
         ]);
     }
 }

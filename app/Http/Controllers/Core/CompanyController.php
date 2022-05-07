@@ -37,8 +37,8 @@ class CompanyController extends Controller
     public function store(Request $request)
     {
         $validation = \Validator::make($request->all(), [
-            'cnpj' => 'unique:company'
-        ]);
+            'trading_name' => 'min:5'
+        ]); 
 
         if($validation->fails())
         {

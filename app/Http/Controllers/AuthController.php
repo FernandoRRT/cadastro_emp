@@ -46,7 +46,7 @@ class AuthController extends Controller
         if ($token = $this->guard()->attempt($credentials)) {
             return $this->respondWithToken($token);
         }
-        return response()->json(['error' => 'Nome de usuário ou senha errado.'], 401);
+        return response()->json(['error' => 'Nome de usuário ou senha errados.'], 401);
     }
 
     /**
@@ -90,10 +90,16 @@ class AuthController extends Controller
      */
     protected function respondWithToken($token)
     {
+        $name = Auth::user()->name;
+        $email = Auth::user()->email;
+
         return response()->json([
             'access_token' => $token,
             'token_type' => 'bearer',
-            'expires_in' => $this->guard()->factory()->getTTL() * 60
+            'expiration' => time() + 3600,
+            // 'expires_in' => $this->guard()->factory()->getTTL() * 60,
+            'name' => $name,
+            'email' => $email
         ]);
     }
 
