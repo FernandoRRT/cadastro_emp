@@ -1,21 +1,4 @@
-/* @import url("./themeColors.css"); */
-@import url("./footer.css");
-@import url("./sidebard.css");
-
-:root {
-  --primary: #E7DEDA;
-  --secondary: #F4F6FA;
-  --tertiary: #2D89EF;
-  --primary-text: #232E3C;
-  --secondary-text: #656D77;
-  --btnPrimary: #206BC4;
-  --btnSecondary: #656D77;
-  --btnSucess: #2FB344;
-  --btnDanger: #D63939;
-  --btnWarning: #F76707;
-  --btnInfo: #4299E1;
-  --textLink: #206BC4;
-}
+@import url("./themeColors.css");
 
 html, body {
   height: 100%;

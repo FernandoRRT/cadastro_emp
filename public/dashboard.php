@@ -1,5 +1,5 @@
 <?php
-require('online.php');
+require('./config/online.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -22,41 +22,20 @@ require('online.php');
         <span class="grid-header__user-name"></span>
     </header>
     <nav class="grid-aside">
-        <div class="grid-aside__logodiv">
-            <i class="fa-solid fa-box-archive fa-2xl"></i>
-            <div class="grid-aside__descriptor">
-                <div class="grid-aside__descriptor--text1">SISCADEM</div>
-                <div class="grid-aside__descriptor--text2">Cadastro de empresas</div>
-            </div>
-        </div>
-        <div class="grid-aside__sidenav">
-            <div class="grid-aside__menu-item">
-                <a href="#" class="secondary-text-color">
-                    <div class="grid-aside__menu-link">
-                        <i class="fa-regular fa-file-lines"></i> <span>Empresas</span>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-aside__menu-item">
-                <a href="#" class="secondary-text-color">
-                    <div class="grid-aside__menu-link">
-                        <i class="fa-solid fa-users-gear"></i> <span>Usuários</span>
-                    </div>
-                </a>
-            </div>
-        </div>
+        <sidebar-element></sidebar-element>
     </nav>
     <main class="grid-main">
         <div class="grid-main__container">
             Main
             <p id="arr"></p>
-            <gfg-custom-element></gfg-custom-element>
+
         </div>
     </main>
     <footer class="grid-footer">
-        <!-- conteúdo carregado através do JS para reduzir o tamanho do código no arquivo e para fins educativos -->
+        <footer-element></footer-element>
     </footer>
-    <script src="./js/dashboard.js"></script>
+    <script src="./js/dashboard.js" type="module"></script>
 </body>
 
 </html>
+
