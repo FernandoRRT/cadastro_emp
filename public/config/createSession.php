@@ -6,9 +6,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   session_start();
   $_SESSION['token'] = $POSTtoken;
   $_SESSION['expiration'] = $POSTexpiration;
-  header('Location:../dashboard.php'); 
+  header('Location:../empresas.php'); 
 }
 else {
-  header('Location:../index.html'); 
+  header('Location:../index.php'); 
 }
 ?>

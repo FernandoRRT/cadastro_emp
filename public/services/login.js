@@ -1,4 +1,3 @@
-
 localStorage.clear();
 
 const signInEndpoint = async (email, password) => {

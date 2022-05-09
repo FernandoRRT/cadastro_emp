@@ -23,7 +23,7 @@ class CompanyController extends Controller
     {
         $data = Company::all();
 
-        return response()->json(['data' => $data]);
+        return response()->json($data);
     }
 
     /**

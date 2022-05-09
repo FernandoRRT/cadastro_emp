@@ -21,8 +21,13 @@ Criado esquema de cores padrão do CSS
 
 Componentização do dashboard.html em web components
 
+## 09/05/2022 05:56
+
+Componentização do HTML reformulada
+Iniciado o formulário de cadastro de empresas
+
 ### O que falta alterar:
 
 >**Precisa fazer a verificação dos dados formulário de entrada**   
-**Fazer a página de usuários e de empresas**
+**Fazer a página de usuários e de terminar a de empresas**
 

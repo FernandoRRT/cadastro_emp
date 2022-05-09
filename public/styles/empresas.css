@@ -1,0 +1,199 @@
+
+/* CSSs acessíveis em todos os modelos */
+
+.grid-main__card {
+    background: var(--primary);
+    align-self: stretch;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .grid-main__card + .grid-main__card {
+    margin-top: 20px;
+  }
+  
+  .grid-main__card__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    justify-content: space-around;
+  }
+  
+  .grid-main__card__title {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Bakbak One", monospace;
+    color: var(--primary-text);
+  }
+  
+  .grid-main__card__body {
+    background: var(--primary);
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-self: stretch;
+    align-items: start;
+    justify-content: start;
+  }
+  
+
+.grid-main__card__element {
+    background: var(--secondary);
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.grid-main__card__element__child {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+} 
+
+.grid-main__card__element__icondiv {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    border-radius: 10px;
+    background-color: var(--tertiary);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.grid-main__card__element__icondiv:hover {
+    background: var(--btn-sucess);
+    font-size: 18px;
+}
+
+.grid-main__card__element__body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.grid-main__card__element__body__title {
+    color: var(--primary-text);
+    font-weight: 700;
+    padding-right: 5px;
+}
+
+.grid-main__card__element__body__description {
+    color: var(--scondary-text);
+    padding-right: 5px;
+    font-size: 16px;
+}
+
+.grid-main__usercard__body {
+    background: var(--secondary);
+    border-radius: 10px;
+    /* padding: 10px 20px; */
+}
+
+
+.grid-main__usercard__divider {
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+.grid-main__card__controls {
+    padding-top: 20px;
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.justifySelf--end {
+    justify-self: right;
+}
+
+@media (max-width: 580px) {
+    .grid-main__card__body {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .grid-main__card__controls {
+        font-size: 1em;
+        word-break: break-word;
+    }
+    .grid-main__usercard__divider {
+        padding: 10px;
+    }
+  }
+
+
+  
+/* Botões e foms */
+
+.button--sucess {
+    color: var(--secondary);
+    background-color: var(--btn-sucess);
+    border: 1px solid var(--btn-sucess);
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button--sucess:hover {
+    background: rgba(47, 179, 68, 0.8);
+  }
+  
+  .button--warning {
+    color: var(--secondary);
+    background-color: var(--btn-warning);
+    border: 1px solid var(--btn-warning);
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button--warning:hover {
+    background: rgba(247, 103, 7, 0.8);
+  }
+  
+  .button--danger {
+    color: var(--secondary);
+    background-color: var(--btn-danger);
+    border: 1px solid var(--btn-danger);
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button--danger:hover {
+    background: rgba(214, 57, 57, 0.8);
+  }
+
+  .inputbox {
+    padding: 5px;
+    text-align: center;
+}

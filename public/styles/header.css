@@ -1,0 +1,10 @@
+.grid-header__welcome-message {
+    color: var(--secondary-text);
+    font-size: 1.2em;
+    padding-right: 6px;
+}
+
+.grid-header__user-name {
+    font-style: italic;
+    font-size: 1.3em;
+}

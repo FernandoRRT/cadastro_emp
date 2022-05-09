@@ -12,9 +12,10 @@
 
 .grid-footer__container a {
   color: var(--primary-text);
+  cursor: pointer;
 }
 
-.grid-footer__container__icon-div {
+.grid-footer__icondiv {
   border-radius: 50%;
   text-align: center;
   margin: 0 5px;
@@ -22,11 +23,7 @@
   background: var(--secondary);
 }
 
-i:hover {
-  cursor: pointer;
-}
-
-.grid-footer__container__icon-div:hover {
+.grid-footer__icondiv:hover {
   color: var(--primary);
 }
 
