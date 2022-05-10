@@ -34,39 +34,27 @@ require('./config/online.php');
             <div class="grid-main__card">
             <div class="grid-main__card__header">
                     <p class="grid-main__card__title">
-                    Edição da empresa: TESTE
+                    
                     </p>
                 </div>
                 <div class="grid-main__usercard__body">
                     <div class="grid-main__usercard__divider">
-                        <label for="trading-name" class="justifySelf--end">Nome Fantasia </label>
-                        <input type="text" id="trading-name" name="trading-name" class="inputbox" value="" placeholder="Nome da empresa" required>
-    
-                        <label for="cnpj" class="justifySelf--end">CNPJ : </label>
-                        <input type="text" id="cnpj" name="cnpj" class="inputbox" value="" placeholder="CNPJ da empresa">
-    
-                        <label for="foundation" class="justifySelf--end">Data de Fundação </label>
-                        <input type="date" id="foundation" name="foundation" class="inputbox" value="" >
-    
+
+                        <label for="name" class="justifySelf--end">Nome </label>
+                        <input type="text" id="name" name="name" class="inputbox" value="" placeholder="Seu nome" required>
                         <label for="email" class="justifySelf--end">E-mail comercial </label>
-                        <input type="email" id="email" name="email" class="inputbox" value="" placeholder="Email da empresa">
+                        <input type="email" id="email" name="email" class="inputbox" value="" placeholder="Seu email">
+                        <label for="password" class="justifySelf--end">Senha </label>
+                        <input type="password" id="password" name="password" class="inputbox" value="" placeholder="Digite um password">
     
-    
-                        <label for="phone" class="justifySelf--end">Telefone </label>
-                        <input type="tel" id="phone" name="phone" class="inputbox" value="" placeholder="Telefone comercial">
-    
-                        <label for="cep" class="justifySelf--end">CEP </label>
-                        <input type="text" id="cep" name="cep" class="inputbox" value="" placeholder="CEP">
-    
-                        <label for="address" class="justifySelf--end">Endereço </label>
-                        <input type="text" id="address" name="address" class="inputbox" value="" placeholder="Endereço comercial">
                     </div>
                 </div>
-
+                <div class="grid-main__card__errors">
+                    <p id="grid-main__card__errors"> </p>
+                </div>
                 <div class="grid-main__card__controls">
-                    <button id="btnDanger" class="button--danger">Excluir</button>
-                    <button id="btnWrn" class="button--warning">Cancelar</button>
                     <button id="btnSucess" class="button--sucess">Salvar</button>
+                    <button id="btnWrn" class="button--warning">Cancelar</button>
                 </div>
             </div>
         </div>
@@ -74,7 +62,7 @@ require('./config/online.php');
     <footer class="grid-footer">
     </footer>
     <script src="./scripts/htmlbuilder.js" type="module"></script>
-    <script src="./scripts/newcompany.js" type="module"></script>
+    <script src="./scripts/usuariosform.js" type="module"></script>
 </body>
 
 </html>

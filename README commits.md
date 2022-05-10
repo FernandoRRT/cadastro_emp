@@ -26,8 +26,12 @@ Componentização do dashboard.html em web components
 Componentização do HTML reformulada
 Iniciado o formulário de cadastro de empresas
 
+## 10/05/2022 05:33
+
+Formulários completos e com validações concluídas.
+
 ### O que falta alterar:
 
->**Precisa fazer a verificação dos dados formulário de entrada**   
-**Fazer a página de usuários e de terminar a de empresas**
+>**Mudar elementos visuais do front end: criar mensagem de sucesso na criação de registros no db**   
+**Criar rotas adocionais no backend para retornar por id, no caso a function show. Que não foi implementada nesse momento no projeto**
 

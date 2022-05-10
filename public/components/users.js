@@ -1,16 +1,16 @@
-import { getCompaniesEndpoint } from "../services/endpoints.js";
+import { getUsersEndpoint } from "../services/endpoints.js";
 
-const listCompanies = () => {
-    class LoadCompany extends HTMLElement {
+const listUsers = () => {
+    class LoadUsers extends HTMLElement {
         constructor() {
             super();
             let shadow = this.attachShadow({ mode: 'open' });
-            Promise.resolve(getCompaniesEndpoint()).then(function (list) {
+            Promise.resolve(getUsersEndpoint()).then(function (list) {
                 list.map((item) => {
                     const cardDiv = document.createElement("div");
                     cardDiv.classList.add('grid-main__card__element');
                     cardDiv.addEventListener('click', 
-                    (evt) => editCompany(evt, item));
+                    (evt) => editUser(evt, item));
                     shadow.appendChild(cardDiv);
                     const cardbody = document.createElement("div");
                     cardbody.classList.add('grid-main__card__element__child');
@@ -19,24 +19,24 @@ const listCompanies = () => {
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
                     <link rel="stylesheet" href="../styles/empresas.css" type="text/css">
                     <div class="grid-main__card__element__icondiv">
-                        <i class="fa-solid fa-briefcase fa-2xl"></i>
+                        <i class="fa-solid fa-user fa-2xl"></i>
                     </div>
                     <div>
                         <div>
                             <div class="grid-main__card__element__body">
                                 <span class="grid-main__card__element__body__title">
-                                    Nome da Empresa:
+                                    Nome do usuário:
                                 </span>
                                 <span class="grid-main__card__element__body__description">
-                                    ${item.trading_name}
+                                    ${item.name}
                                 </span>
                             </div>
                             <div class="grid-main__card__element__body">
                                 <span class="grid-main__card__element__body__title">
-                                    Telefone:
+                                    Email:
                                 </span>
                                 <span class="grid-main__card__element__body__description">
-                                    ${item.phone}
+                                    ${item.email}
                                 </span>
                             </div>
                         </div>
@@ -49,16 +49,15 @@ const listCompanies = () => {
         }
     }
     window.customElements.define(
-        'empresas-element', LoadCompany);
+        'usuarios-element', LoadUsers);
 }
-export { listCompanies };
+export { listUsers };
 
 
 
-const editCompany = (evt, item) => {
+const editUser = (evt, item) => {
     evt.preventDefault();
-    localStorage.setItem('EmpresaId', JSON.stringify(item));
-    window.location.href='/empresasform.php';
-
+    localStorage.setItem('UserId', JSON.stringify(item));
+    window.location.href='/usersform.php';
 }
-export { editCompany };
+export { editUser };

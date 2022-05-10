@@ -81,3 +81,39 @@
 .grid-aside__menu__link > span {
     font-weight: 600;
 }
+
+.link-active {
+  border-top-right-radius: 25px 50%;
+  border-bottom-right-radius: 25px 50%;
+  cursor: pointer;
+  background: var(--secondary-text);
+  border-left: 5px solid var(--secondary-text);
+  transition: all 0.01s ease-in-out;
+  color: var(--secondary);
+}
+
+.link-active i {
+  color: var(--secondary);
+}
+
+.link-active i:hover {
+  color: var(--secondary);
+}
+
+.grid-aside__menu__link:hover {
+    border-top-right-radius: 25px 50%;
+    border-bottom-right-radius: 25px 50%;
+    cursor: pointer;
+    background: var(--secondary);
+    border-left: 5px solid var(--tertiary);
+    transition: all 0.01s ease-in-out;
+    color: var(--primary-text);
+}
+
+.grid-aside__menu__link i {
+    margin: 0 5px;
+}
+
+.grid-aside__menu__link i:hover {
+    color: var(--primary-text);
+}

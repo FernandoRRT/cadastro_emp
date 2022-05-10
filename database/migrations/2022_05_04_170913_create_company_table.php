@@ -17,7 +17,7 @@ class CreateCompanyTable extends Migration
             $table->id();
             $table->string('trading_name', 100);
             $table->string('cnpj', 25)->nullable();
-            $table->date('foundation')->nullable();
+            $table->string('foundation',10)->nullable();
             $table->string('email', 255)->nullable();
             $table->string('phone', 15)->nullable();
             $table->string('zipcode', 30)->nullable();

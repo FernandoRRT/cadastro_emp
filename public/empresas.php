@@ -36,8 +36,7 @@ require('./config/online.php');
                     <p class="grid-main__card__title">
                         Crie ou selecione uma empresa para editá-la
                     </p>
-                    <button id="create-company" class="button--sucess"
-                    onclick="window.location.href='/newcompany.php'">
+                    <button id="create-company" class="button--sucess">
                         Criar nova Empresa
                     </button>
                 </div>

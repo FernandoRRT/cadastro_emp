@@ -30,8 +30,19 @@ require('./config/online.php');
     <nav class="grid-aside">
     </nav>
     <main class="grid-main">
-        <div class="grid-main__container">
-USUARIOS
+    <div class="grid-main__container">
+            <div class="grid-main__card">
+                <div class="grid-main__card__header">
+                    <p class="grid-main__card__title">
+                        Crie ou selecione um usuário para editá-lo
+                    </p>
+                    <button id="create-user" class="button--sucess">
+                        Criar novo usuário
+                    </button>
+                </div>
+                <usuarios-element class="grid-main__card__body">
+                </usuarios-element>
+            </div>
         </div>
     </main>
     <footer class="grid-footer">

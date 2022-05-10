@@ -126,25 +126,6 @@ body, h1, h2, p, ul, li, a {
 }
 
 
-
-
-.link-active {
-  border-top-right-radius: 25px 50%;
-  border-bottom-right-radius: 25px 50%;
-  cursor: pointer;
-  background: var(--secondary-text);
-  border-left: 5px solid var(--secondary-text);
-  transition: all 0.01s ease-in-out;
-  color: var(--secondary);
-}
-
-
-
-.link-active i {
-  color: var(--secondary);
-}
-
-
 /* Elmentos modificadores desagrupados */
 
 .justifyContent--spaceAround {

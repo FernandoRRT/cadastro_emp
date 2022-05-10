@@ -22,7 +22,7 @@ const buildHtml = () => {
     Promise.resolve(loadHTML('sidebar', 'nav'))
     .then(() => {
         const location = window.location.pathname;
-        if (location === "/empresas.php")
+        if (location === "/empresas.php" || location === "/empresasform.php") 
         {
             document.getElementById("link-empresas").classList.add("link-active");
         } else {
