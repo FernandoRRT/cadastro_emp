@@ -11,6 +11,8 @@ class Registro {
 const registro = new Registro();
 const retrieveData = localStorage.getItem('UserId');
 
+document.getElementById("password").setAttribute("autocomplete", "off");
+
 const getValue = (elId) => {
     return document.getElementById(`${elId}`).value;
 }

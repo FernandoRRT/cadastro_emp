@@ -37,18 +37,25 @@ require('./config/online.php');
                     
                     </p>
                 </div>
+                <form autocomplete="off">
                 <div class="grid-main__usercard__body">
                     <div class="grid-main__usercard__divider">
+                    
+                    <!-- Para remover a featura do autocomplete -->
+                        <input class="hidden" type="text" style="display: none!important; visibility: hidden!important;" ></input>
+                        <input class="hidden" type="password" style="display: none!important; visibility: hidden!important;" ></input>
 
+                    <!-- O formulario abaixo -->
                         <label for="name" class="justifySelf--end">Nome </label>
                         <input type="text" id="name" name="name" class="inputbox" value="" placeholder="Seu nome" required>
                         <label for="email" class="justifySelf--end">E-mail comercial </label>
                         <input type="email" id="email" name="email" class="inputbox" value="" placeholder="Seu email">
                         <label for="password" class="justifySelf--end">Senha </label>
-                        <input type="password" id="password" name="password" class="inputbox" value="" placeholder="Digite um password">
+                        <input type="password" id="password" name="password" class="inputbox" value="" placeholder="Digite um password" autocomplete="off">
     
                     </div>
                 </div>
+                </form>
                 <div class="grid-main__card__errors">
                     <p id="grid-main__card__errors"> </p>
                 </div>
